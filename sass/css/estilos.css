@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Taviraj", serif;
+}
+
+body {
+  background: linear-gradient(0deg, rgb(89, 140, 198), rgb(20, 175, 157));
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contenedor .calculadora {
+  display: grid;
+  gap: 1.3rem;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #26272a;
+  padding: 1.4rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 2px 4px rgba(0, 0, 0, 0.3764705882);
+  width: 22rem;
+}
+.contenedor button {
+  cursor: pointer;
+  margin: 0.1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #373b3e;
+  box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.5647058824);
+  font-weight: 600;
+}
+.contenedor button:active {
+  background-color: #616465;
+}
+.contenedor button:focus {
+  outline: none;
+}
+.contenedor .cubre-2 {
+  grid-column: span 2;
+}
+.contenedor .azul {
+  background-color: #2191a8;
+}
+.contenedor .verde {
+  background-color: #129016;
+}
+
+.valor {
+  grid-column: 1/-1;
+  background-color: #6c7074;
+  border-radius: 1rem;
+  height: 8rem;
+  width: 19.3rem;
+  overflow: hidden;
+  padding: 1rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.valor .valor__actual {
+  font-size: 1.5rem;
+}
+.valor .valor__anterior {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=estilos.css.map */
